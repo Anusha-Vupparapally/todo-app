@@ -23,7 +23,7 @@ abstract class TodoDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     TodoDatabase::class.java,
-                    "todo_database"
+                    "todo"
                 ).build()
                 INSTANCE = instance
                 instance
